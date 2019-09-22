@@ -3,115 +3,444 @@
 	padding: 0;
 }
 
+body {
+	font-family: 'Arial', sans-serif;
+
+}
+
 .clearfix:after {
 	content: "";
-	display: table;
+	display: block;
 	clear: both;
 }
 
-.padding-site {
-	padding-left: 50px;
-	padding-right: 50px;
-}
-
 .container {
-	font-family: 'Arial', sans-serif;
 	width: 1280px;
 	margin: 0 auto;
 }
 
-.bg-1 {
+.bg1 {
 	background-color: #fff;
 }
 
-.bg-2 {
+.bg2 {
 	background-color: #f5f5f5;
 }
 
-h3 {
-	color: #445161;
-	font-size: 30px;
-	font-weight: 400;
-	line-height: 36px;
-}
-
-.header {
-	height: 323px;
+.pageHeader {
+	padding: 50px;
 	background-color: #445162;
 }
 
-.header-textwrapper {
-	margin-top: 40px;
-	float: left;
-}
-
-.header-title {
+.pageHeader .productName {
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 	color: #ffffff;
 	font-size: 60px;
 	font-weight: 400;
+	float: left;
+	margin-bottom: 20px;
 }
 
-.header-logo {
-	margin-top: 50px;
+.pageHeader .headerProductImg {
 	width: 469px;
 	height: 214px;
 	float: right;
 }
 
-.note-list {
-	margin-top: 25px;
-	list-style-type: none;
-	list-style-image: url(../img/check_icon.png);
-
+.pageHeader .headerList {
+	list-style-image: url("../img/check_icon.png");
+	float: left;
 }
 
-.note-list-item {
-	margin-left: 35px;
-}
-
-.note-list-item p{
+.pageHeader .headerListItem {
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 	color: #ffffff;
 	font-size: 20px;
 	font-weight: 400;
+	line-height: 35px;
+	margin-left: 35px;
+}
+
+.aboutProduct {
+	padding: 50px;
+}
+
+.aboutProduct .aboutProductHeader {
+	color: #445161;
+	font-size: 30px;
+	font-weight: 400;
 	line-height: 36px;
-}
-
-.about-product {
-
-}
-
-.about-product-textwrapper {
+	margin-bottom: 10px;
 	float: left;
-	width: 650px;
-	margin-top: 30px;
-	margin-bottom: 50px;
 }
 
-.about-product-video {
+.aboutProduct .aboutProductImg {
 	width: 430px;
 	height: 245px;
-	background-color: #445162;
 	float: right;
-	margin-bottom: 50px;
-	margin-top: 50px;
 }
 
-.about-product-textwrapper p{
+.aboutProduct .aboutProductParagraf {
 	color: #333333;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
-	margin-top: 20px;
+	max-width: 670px;
+	float: left;
+	margin-top: 15px;
 }
 
-.footer {
-	height: 535px;
+.dignityAndPluses {
+	padding: 50px;
 }
 
-.contacts {
-	height: 509px;
+.dignityAndPluses .dignityAndPlusesHeader {
+	color: #445161;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+	margin: 0 0 30px;
+	text-align: center;
+}
+
+.dignityAndPluses .pluses li:nth-child(odd) {
+	margin-right: 8px;
+}
+
+.dignityAndPluses .pluses li:nth-child(-n+2) {
+	margin-top: 0;
+}
+
+.dignityAndPluses .pluses li {
+	list-style-type: none;
+	background: url(../img/2-layers.png) no-repeat left 5px;
+	padding-left: 40px;
+	width: calc(50% - 8px);
+	box-sizing: border-box;
+	float: left;
+	color: #333333;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-top: 35px;
+}
+
+.screenshots {
+	padding: 50px;
+}
+
+.screenshots .screenshotsHeader {
+	color: #445161;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+	margin: 0 0 30px;
+	text-align: center;
+}
+
+.screenshots .screenshotArticle:nth-child(odd) {
+	margin-left: 8px;
+}
+
+.screenshots .screenshotArticle:nth-child(even) {
+	margin-right: 8px;
+}
+
+.screenshots .screenshotArticle:nth-of-type(n+3) {
+	margin-top: 30px;
+}
+
+.screenshots .screenshotArticle {
+	float: left;
+	width: calc(50% - 8px);
+}
+
+.screenshots .screenshotArticleImg {
+	float: left;
+	margin-right: 15px;
+	width: 200px;
+	height: 150px;
+}
+
+.screenshots .screenshotArticleHead {
+	color: #445161;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+.screenshots .screenshotArticleText {
+	color: #333333;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.reviews {
+	padding: 50px;
+}
+
+.reviews .reviewsHeader {
+	color: #445161;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+	margin: 0 0 30px;
+	text-align: center;
+}
+
+.reviews .reviewsBlock:nth-child(even) {
+	margin-right: 8px;
+}
+
+.reviews .reviewsBlock:nth-child(odd) {
+	margin-left: 8px;
+}
+
+.reviews .reviewsBlock:nth-of-type(n+3) {
+	margin-top: 24px;
+}
+
+.reviews .reviewsBlock {
+	width: calc(50% - 8px);
+	float: left;
+}
+
+.reviews .reviewsBlockImg {
+	float: left;
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+}
+
+.reviews .reviewsBlock .review {
+	color: #707070;
+	position: relative;
+	background-color: #ebebeb;
+	float: right;
+	width: 480px;
+	padding: 16px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	line-height: 18px;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: 400;
+}
+
+.reviews .reviewsBlock .review:before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	left: -7px;
+	top: 27px;
+	background-color: #ebebeb;
+	transform: rotate(45deg);
+	position: absolute;
+
+}
+
+.reviews .reviewsBlock .reviewSign {
+	color: #989898;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+}
+
+.buyItNow {
+	padding: 50px;
+}
+
+.buyItNow .buyItNowHeader {
+	color: #445161;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+	margin: 0 0 30px;
+	text-align: center;
+}
+
+.buyItNow .buyItNowBlocks {
+	width: 990px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.buyItNow .buyItNowBlock {
 	background-color: #445162;
+	border-radius: 4px;
 }
 
+.buyItNow .buyItNowBlockHead {
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 30px;
+	width: 300px;
+}
+
+.buyItNow .buyItNowBlockPrice {
+	border: 2px solid #445162;
+	background-color: #fff;
+	color: #445162;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: center;
+	padding: 18px 0;
+}
+
+.buyItNow .buyItNowBlockText {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	padding: 20px;
+}
+
+.buyItNow .buyItNowBlockText ol {
+	margin-left: 20px;
+}
+
+.buyItNow .buyItNowBlockBtn {
+	color: #445161;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 18px;
+	text-transform: uppercase;
+	width: 260px;
+	margin: 0 auto;
+	background-color: #fff;
+	margin: 0 20px 20px 20px;
+	border-radius: 5px;
+	padding: 14px 0;
+	text-align: center;
+}
+
+.buyItNow .buyItNowBlockBtn:hover {
+	cursor: pointer;
+}
+
+.PageFooter {
+	background-color: #445162;
+	padding-top: 52px;
+}
+
+.PageFooter .contactsHeader {
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+	text-align: center;
+	margin-bottom: 31px;
+}
+
+.PageFooter .contactsContent {
+	width: 830px;
+	margin: 0 auto;
+}
+
+.PageFooter .contactsForm {
+	float: left;
+	margin-right: 45px;
+}
+
+.PageFooter .contactsForm input, .PageFooter .contactsForm textarea {
+	color: #445162;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	border-radius: 5px;
+	background-color: #fff;
+	border-width: 0px;
+	padding: 10px;
+	display: block;
+	width: 500px;
+	margin-bottom: 21px;
+}
+
+.PageFooter .contactsForm textarea {
+	height: 170px;
+
+}
+
+.PageFooter .contactsForm .contactsFormButton {
+	width: 140px;
+	margin: 0 auto;
+	padding: 8px 0;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 49px;
+}
+
+.PageFooter .contactsFormButton:hover {
+	cursor: pointer;
+}
+
+.PageFooter .contactsList {
+	float: right;
+}
+
+.PageFooter .contactsList div {
+	overflow: hidden;
+}
+
+.PageFooter .contactsList div:not(.socialIcons){
+	margin-bottom: 15px;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	padding-left: 29px;
+}
+
+.PageFooter .skype {
+	background: url(../img/skype_icon.png) no-repeat left center;
+}
+
+.PageFooter .icq {
+background: url(../img/icq_icon.png) no-repeat left center;
+}
+
+.PageFooter .email {
+background: url(../img/email_icon.png) no-repeat left center;
+}
+
+.PageFooter .phone {
+background: url(../img/phone_icon.png) no-repeat left center;
+}
+
+@font-face {
+	font-family: "Socialico";
+	src: url("../font/Socialico/Socialico.eot?") format("eot"), url("../font/Socialico/Socialico.woff") format("woff"), url("../font/Socialico/Socialico.ttf") format("truetype"), url("../font/Socialico/Socialico.svg#Socialico") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.PageFooter .socialIcons {
+	padding-top: 10px;
+}
+
+.PageFooter .socialIcons a {
+	font-family: Socialico;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 60px;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+	line-height: 50px;
+}
+
+.copyrightPage {
+	width: 100%;
+	color: #445162;
+	text-align: center;
+	font-size: 14px;
+	padding: 5px 0;
+}
